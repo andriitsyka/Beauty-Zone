@@ -1,0 +1,301 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Play-Regular.ttf') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/Play-Bold.ttf') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/roboto-v30-latin-700.woff2') format('woff2');
+}
+
+:root {
+  --color-primary-white: #ffffff;
+  --color-primary-blow: #2b7fff;
+  --color-primary-dakr-blow: #011c44;
+  --color-secondary-gray: #4a4a4a;
+  --color-secondary-white-gray: #747272;
+  --color-secondary-dark-blow: #011f4a;
+  --color-secondary-yelow: #ffd02b;
+}
+
+/* Base */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--color-primary-dakr-blow);
+  background-color: var(--color-primary-white);
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding-top: 0;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+h1,
+h2 {
+  font-family: 'Play', sans-serif;
+}
+
+address {
+  font-style: normal;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section {
+  padding: 48px 0;
+}
+
+.decoration {
+  max-width: 529px;
+}
+
+/* Header */
+.header {
+  padding: 42px 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 40px;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  gap: 56px;
+}
+
+/* Link */
+.header-link {
+  color: var(--color-primary-dakr-blow);
+  text-decoration: none;
+}
+
+.header-link:hover {
+  color: var(--color-primary-blow);
+}
+
+/* Social link header */
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.header-social-link {
+  fill: var(--color-primary-dakr-blow);
+}
+
+.header-social-link:hover {
+  fill: var(--color-primary-blow);
+}
+
+/* Hero section */
+.banner-section {
+  padding-top: 16px;
+}
+
+.hero-subtitle {
+  padding-bottom: 16px;
+}
+
+.hero-title {
+  margin-top: 0;
+  font-size: 140px;
+  font-weight: 700;
+  line-height: 0.9;
+  margin-bottom: 40px;
+  color: var(--color-primary-blow);
+  text-transform: capitalize;
+}
+
+.hero-text {
+  margin: 0;
+  flex-basis: 238px;
+  width: 100%;
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--color-secondary-gray);
+}
+
+.section-title {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.section-title .accent {
+  color: var(--color-primary-blow);
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+/* Button */
+.button {
+  color: var(--color-primary-white);
+  font-weight: 700;
+  margin-bottom: 14px;
+  font-size: 18px;
+  background-color: var(--color-primary-blow);
+  border: 2px solid var(--color-primary-blow);
+  padding: 16px 32px;
+  border-radius: 32px;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: var(--color-primary-dakr-blow);
+  background-color: transparent;
+}
+
+/* Info section */
+.info-section {
+  padding-top: 125px;
+}
+
+.info-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-content,
+.info-images {
+  flex-basis: 50%;
+}
+
+.info-content {
+  max-width: 710px;
+}
+
+.info-title {
+  max-width: 529px;
+  margin-bottom: 40px;
+}
+
+.info-text {
+  font-size: 22px;
+  line-height: 1.7;
+}
+
+.info-text:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.info-image {
+  border-radius: 50%;
+}
+
+/* Advantages section */
+.advantages-text {
+  color: #000000;
+  line-height: 1.3;
+}
+
+/* Procedures section */
+.procedures-text {
+  color: var(--color-primary-white);
+  font-size: 22px;
+  line-height: 1.1;
+  background-color: burlywood; /* remove */
+}
+
+/* Footer */
+footer {
+  background-color: var(--color-primary-dakr-blow);
+}
+
+.footer-link {
+  color: var(--color-primary-white);
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: var(--color-primary-blow);
+}
+
+/* Address */
+.address-link {
+  color: var(--color-primary-white);
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.address-link:hover {
+  color: var(--color-primary-blow);
+}
+
+.address-copyright {
+  color: var(--color-secondary-white-gray);
+  font-size: 13px;
+}
