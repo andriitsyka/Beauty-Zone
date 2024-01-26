@@ -265,14 +265,6 @@ ul {
   margin: 0 auto 48px;
 }
 
-/* .advantages-container {
-  display: flex;
-  gap: 32px;
-  align-items: center;
-} */
-
-/* ^^^ then uncomment ^^^ */
-
 .advantages-list {
   display: flex;
   gap: 56px;
@@ -301,11 +293,66 @@ ul {
 }
 
 /* Procedures section */
-.procedures-text {
-  color: var(--color-primary-white);
+.procedure-title {
+  margin-bottom: 48px;
+}
+
+.procedure-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+.procedure-list {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.procedure-item {
+  flex-basis: calc((100% - 32px) / 3);
+}
+
+.procedure-card {
+  width: 344px;
+  height: 456px;
+  border-radius: 0 120px 0 120px;
+  background: linear-gradient(
+    180deg,
+    rgba(1, 28, 68, 0) 48.53%,
+    rgba(1, 28, 68, 0.73) 84.61%,
+    #011c44 101.39%
+  );
+}
+
+.procedure-text {
+  text-align: center;
   font-size: 22px;
   line-height: 1.1;
-  background-color: burlywood; /* remove */
+  color: var(--color-primary-dakr-blow);
+}
+
+/* Carousel */
+.carousel-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  background-color: transparent;
+  fill: var(--color-primary-dakr-blow);
+  border-radius: 50%;
+  border: 1px solid var(--color-primary-dakr-blow);
+  cursor: pointer;
+}
+
+.carousel-button:hover {
+  fill: var(--color-primary-white);
+  background-color: var(--color-primary-blow);
+  border: var(--color-primary-blow);
 }
 
 /* Footer */
